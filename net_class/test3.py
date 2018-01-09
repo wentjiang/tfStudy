@@ -12,6 +12,6 @@ init = tf.initialize_all_variables() # must have if define variable
 
 with tf.Session() as sess:
     sess.run(init)  #must run
-    for _ in range(3):
+    for _ in range(5):
         sess.run(update)
         print(sess.run(state))
